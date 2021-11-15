@@ -14,6 +14,9 @@
 		145D994C27426BDD00A0A5A5 /* Screen_AnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D994B27426BDD00A0A5A5 /* Screen_AnimationTests.swift */; };
 		145D995627426BDD00A0A5A5 /* Screen_AnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D995527426BDD00A0A5A5 /* Screen_AnimationUITests.swift */; };
 		145D995827426BDD00A0A5A5 /* Screen_AnimationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D995727426BDD00A0A5A5 /* Screen_AnimationUITestsLaunchTests.swift */; };
+		145D996727426C8700A0A5A5 /* BoardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D996627426C8700A0A5A5 /* BoardingScreen.swift */; };
+		145D996927426CBE00A0A5A5 /* OffSetTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D996827426CBE00A0A5A5 /* OffSetTabView.swift */; };
+		145D996B27426CF100A0A5A5 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D996A27426CF100A0A5A5 /* OnBoarding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		145D995127426BDD00A0A5A5 /* Screen_AnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Screen_AnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		145D995527426BDD00A0A5A5 /* Screen_AnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen_AnimationUITests.swift; sourceTree = "<group>"; };
 		145D995727426BDD00A0A5A5 /* Screen_AnimationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen_AnimationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		145D996627426C8700A0A5A5 /* BoardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingScreen.swift; sourceTree = "<group>"; };
+		145D996827426CBE00A0A5A5 /* OffSetTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffSetTabView.swift; sourceTree = "<group>"; };
+		145D996A27426CF100A0A5A5 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,8 @@
 		145D993927426BD900A0A5A5 /* Screen_Animation */ = {
 			isa = PBXGroup;
 			children = (
+				145D996527426C5800A0A5A5 /* Model */,
+				145D996427426C4D00A0A5A5 /* View */,
 				145D993A27426BD900A0A5A5 /* Screen_AnimationApp.swift */,
 				145D993C27426BD900A0A5A5 /* ContentView.swift */,
 				145D993E27426BDD00A0A5A5 /* Assets.xcassets */,
@@ -125,6 +133,23 @@
 				145D995727426BDD00A0A5A5 /* Screen_AnimationUITestsLaunchTests.swift */,
 			);
 			path = Screen_AnimationUITests;
+			sourceTree = "<group>";
+		};
+		145D996427426C4D00A0A5A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				145D996827426CBE00A0A5A5 /* OffSetTabView.swift */,
+				145D996A27426CF100A0A5A5 /* OnBoarding.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		145D996527426C5800A0A5A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				145D996627426C8700A0A5A5 /* BoardingScreen.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +283,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				145D993D27426BD900A0A5A5 /* ContentView.swift in Sources */,
+				145D996727426C8700A0A5A5 /* BoardingScreen.swift in Sources */,
 				145D993B27426BD900A0A5A5 /* Screen_AnimationApp.swift in Sources */,
+				145D996927426CBE00A0A5A5 /* OffSetTabView.swift in Sources */,
+				145D996B27426CF100A0A5A5 /* OnBoarding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +465,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -467,7 +495,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

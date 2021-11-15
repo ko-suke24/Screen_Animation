@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var offset: CGFloat = .zero
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        OnBoarding()
+        
     }
 }
 
@@ -18,4 +22,12 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
+
+extension View {
+    
+    func getScreenBounds() -> CGRect {
+        return UIScreen.main.bounds
+    }
+    
 }
